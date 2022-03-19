@@ -17,10 +17,12 @@ function getDate(){
   let inpTime = new Date(`${month} ${day} ${year}`);
   let date = curTime - inpTime;    
   let d = Math.floor(date / 1000 /60 /60 /24);
+  
+  let result = document.getElementById("result")
   if(d <= 0){
-    console.log("Sizda qazo namoz yo'q")
+    result.innerHTML="Sizda qazo namoz yo'q"
   }else{
-    console.log(`Sizda - ${d} kunlik qazo namozingiz bor`)
+    result.innerHTML=`Sizda - ${d} kunlik qazo namozingiz bor`
   }
 }
         
