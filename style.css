@@ -1,0 +1,44 @@
+*{
+    margin:0;padding:0;
+    box-sizing:border-box ;
+    font-family:"Poppins";
+    scroll-behavior:smooth;
+    user-select: none;
+}
+#app{
+    min-height:100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul li{
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+input,select{
+  min-width: 100px;
+  padding: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:none;
+  outline: none;
+  background: transparent;
+  box-shadow: 0 0 0 2px var(--cl);
+  border-radius: 4px;
+  transition: 0.5s;
+}
