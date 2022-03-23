@@ -51,8 +51,8 @@ function getDate(){
   
   let result = document.getElementById("result")
   if(d <= 0){
-    result.innerHTML="Sizda qazo namoz yo'q"
+    result.innerHTML="Sizda qazo namoz yo'q. Vaalohu a'lam"
   }else{
-    result.innerHTML=`Sizda - ${d} kunlik qazo namozingiz bor`
+    result.innerHTML=`Sizda - ${d} kunlik qazo namozingiz bor. Vaalohu a'lam.`
   }
 }
