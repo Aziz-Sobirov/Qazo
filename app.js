@@ -17,9 +17,7 @@ for(let i=1;i<pages.length-1;i++){
 }
 
 el.onscroll = function(){
-    if(Math.floor(el.scrollLeft) >= Math.floor(scroll * 4)){
-        getDate()
-    }
+  getDate()
 }
 
 function nextSlide(){
