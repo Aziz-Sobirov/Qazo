@@ -3,37 +3,45 @@
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" /><link href="https://aziz-sobirov.github.io/AS-library/css/as.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-        <title>Qazo namozlarni hisoblash</title>
+        <title>Qazo namozlarni hisoblovchi dastur.</title>
     </head>
     <body>
     <div id="app">
-      <h3 id="result"></h3>
-      <ul>
-        <li>
-          <h3>Jinsingiz belgilang</h3>
+        <ul id="el">
+            <li>
+                <h3>Qazo namozlaringizni hisoblash uchun ayrim ma'lumotlaringizni kiritishingiz lozim.</h3>
+                <button class="as_btn" onclick="nextSlide()">
+                <a href="#">
+                    Boshlash <i class="far fa-arrow-right"></i>
+                </a>
+            </button>
+            </li>
+            <li>
+                <h3>Jinsingiz belgilang</h3>
           <select id="jins">     
             <option>Erkak</option>
             <option>Ayol</option>
           </select>
-        </li>
-        <li>
-          <h3>Tugi'ilgan sanangizni belgilang</h3>
+            </li>
+            <li>
+                <h3>Tugi'ilgan sanangizni belgilang</h3>
           <input type="date" id="date">
-        </li>
-        <li>
-          <p>
-            Hozir namoz o'qiysizmi agar o'qisangiz namoz o'qishni boshlagan sanangizni belgilang</p>
+            </li>
+            <li>
+                <h3>
+            Hozir namoz o'qiysizmi agar o'qisangiz namoz o'qishni boshlagan sanangizni belgilang.</h3>
             <input type="date" id="start-date">
-        </li>
-        <li>
-          <div class="as_btn">
-            <a href="#" onclick="getDate()">Tekshirish</a>
-          </div>
-        </li>
-      </ul> 
+            </li>
+            <li>
+                <h3 id="result"></h3>
+                <button class="as_btn" onclick="prevSlide()">
+               <a href="#">
+                   <i class="far fa-arrow-left"></i> Ortga 
+               </a>
+            </button>
+            </li>
+        </ul>
     </div>
-    
-    
- <script src="app.js"></script>       
-    </body>
+
+<script src="app.js"></script>             </body>
 </html>
